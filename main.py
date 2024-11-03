@@ -17,3 +17,12 @@ else:
     print("no exception")
 finally:
     print("this will execute no matter what")
+valid = False
+while not valid:
+  try:
+    n=int(input("enter a number: "))
+    while n%2==0:
+     print("bye")
+    valid = True
+  except ValueError:
+    print("Invalid")
